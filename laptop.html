@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <title>Laptops</title>
+            <link href="Project_css.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+            <img id="menupic" onmouseover="menuOver(this)" onmouseout="menuOut(this)" src="menu.png" alt="menuimg" onclick="loadMenu()">
+            <a href="about.html"><small id="abouttext">About Us</small></a>
+            <a href="about.html"><img id="aboutpic" src="about.png" alt="aboutus" ></a>
+            <small id="langtext">English</small>
+            <img id="langpic" src="lang1.png" alt="lang" >
+  
+       <header>
+            Premium Gadgets Arena
+       </header>
+                <!--Model For Menu Start-->
+                <div id="model_menu" class="model_menu_class">
+                        <div class="model_menu_content">
+                                <img src="close.png" alt="homeimg" class="close_menu" onclick="cancelbtn()">
+                                <a href="index.html"><img id="homepic" src="home1.png" alt="homeimg"></a>
+                                <a href="index.html"><small id="menu_text1">Home</small></a>
+                                <br><br>
+                                <a href="phone.html"><img id="phonepic" src="phone1.png" alt="phoneimg"></a>
+                                <a href="phone.html"><small id="menu_text2">Smartphones</small></a>
+                                <br><br>
+                                <a href="laptop.html"><img id="laptoppic" src="laptop1.png" alt="laptopimg"></a>
+                                <a href="laptop.html"><small id="menu_text3">Laptop</small></a>
+                                <br><br>
+                                <a href="about.html"><img id="contactuspic" src="contact1.png" alt="contactimg"></a>
+                                <a href="about.html"><small id="menu_text4">Contact Us</small></a>
+                        </div>
+                    </div>
+                     <!--Model For Menu End-->
+
+                <div id="box1">
+                    <p>
+                        <img id="phone" src = "macbook.png" alt="Mackbook Pro" onmouseover="macOver(this)" onmouseout="macOut(this)" height="40%" />
+                        <h1>Apple Mackbook Pro 16"</h1>
+                        <b>Screen Size</b> 16" Retina Display<br>
+                        <b>Processor</b> 2.3 GHz 8-Core 9th gen core i9 Processor<br>
+                        <b>Storage</b> 512GB<br>
+                        <b>Ram</b> 16GB DDR4 RAM<br>
+                        <b>Graphics</b> Intel UHD 630 graphics<br>
+                        <b>Battery</b> 10 hours runtime<br>
+                        <b>Operating System</b> MAC OS Mojave
+                        <iframe width="25%" height="35%" 
+                            src="https://www.youtube.com/embed/ctWDAdQ81B8"  allowfullscreen>
+                        </iframe>
+
+                    </p>
+                </div>
+
+                <div id="box1">
+                        <p>
+                            <img id="phone" src = "surface.png" alt="Surface Pro" onmouseover="surfaceOver(this)" onmouseout="surfaceOut(this)" height="40%" />
+                            <h1>Microsoft Surface Laptop</h1>
+                            <b>Screen Size</b> 15" Pixel Sense Display<br>
+                            <b>Processor</b> AMD Ryzen 5 3580U Processor<br>
+                            <b>Storage</b> 256GB<br>
+                            <b>Ram</b> 8GB DDR4 RAM<br>
+                            <b>Graphics</b> AMD Radeon Vega 5<br>
+                            <b>Battery</b> 10 hours runtime<br>
+                            <b>Operating System</b> Windows 10 OS
+                            <iframe width="25%" height="35%" 
+                               src="https://www.youtube.com/embed/JCmWp4KB5zw"  allowfullscreen>
+                            </iframe>
+                        </p>
+                </div>
+
+                <div id="box1">
+                         <p>
+                            <img id="phone" src = "pixel.png" alt="Pixelbook" onmouseover="pixelOver(this)" onmouseout="pixelOut(this)" height="40%" />
+                            <h1>Google Pixelbook</h1>
+                            <b>Screen Size</b> 12.3" HD LCD Display<br>
+                            <b>Processor</b> 7th gen Interl core i5 Processor<br>
+                            <b>Storage</b> 256GB<br>
+                            <b>Ram</b> 8GB DDR4 RAM<br>
+                            <b>Graphics</b> Intel graphics<br>
+                            <b>Battery</b> 10 hours runtime<br>
+                            <b>Operating System</b> Chrome OS
+                            </p>
+                            <iframe id="pixelFrame" width="25%" height="35%" 
+                                src="https://www.youtube.com/embed/Ja_GMU7-sjs"   allowfullscreen>
+                            </iframe>
+    
+                </div>
+
+    </body>
+
+    <script>
+            var id_menu = document.getElementById("menupic");
+            var model_menu = document.getElementById("model_menu");
+
+            id_menu.onclick = function() {
+            model_menu.style.display = "block";
+            }
+
+            function cancelbtn() {
+                model_menu.style.display = "none";
+             }
+
+             window.onclick = function(event) {
+                if (event.target ==  model_menu) {
+                    model_menu.style.display = "none";
+                }
+            } 
+ 
+            function menuOver(x){
+                x.style.width = "4%";
+                x.style.height = "8%";
+            }
+
+            function menuOut(x){
+                x.style.width = "3%";
+                x.style.height = "7%";
+            }
+
+           function macOver(laptop){
+             laptop.src = "macbook2.png"
+           }
+
+           function macOut(laptop){
+            laptop.src = "macbook.png"    
+           }
+
+           function surfaceOver(laptop){
+            laptop.src = "surface2.png"
+           }
+
+           function surfaceOut(laptop){
+            laptop.src = "surface.png"
+           }
+
+           function pixelOver(laptop){
+            laptop.src = "pixel2.png"
+           }
+
+           function pixelOut(laptop){
+            laptop.src = "pixel.png"
+           }
+
+        </script>
+
+    <footer>
+
+    </footer>
+</html>

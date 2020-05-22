@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Home Page</title>
+       <link href="Project_css.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+            <img id="menupic" onmouseover="menuOver(this)" onmouseout="menuOut(this)" src="menu.png" alt="menuimg" onclick="loadMenu()">
+            <a href="about.html"><small id="abouttext">About Us</small></a>
+            <a href="about.html"><img id="aboutpic" src="about.png" alt="aboutus" ></a>
+            <small id="langtext">English</small>
+            <img id="langpic" src="lang1.png" alt="lang" >
+  
+       <header>
+            Premium Gadgets Arena
+       </header>
+        <img id="backpic" src="backpic1.jpeg" alt="backimg">
+
+        <!--Modal For Menu Start-->
+        <div id="model_menu" class="model_menu_class">
+            <div class="model_menu_content">
+                <img src="close.png" alt="homeimg" class="close_menu" onclick="cancelbtn()">
+                <a href="index.html"><img id="homepic" src="home1.png" alt="homeimg"></a>
+                <a href="index.html"><small id="menu_text1">Home</small></a>
+                <br><br>
+                <a href="phone.html"><img id="phonepic" src="phone1.png" alt="phoneimg"></a>
+                <a href="phone.html"><small id="menu_text2">Smartphones</small></a>
+                <br><br>
+                <a href="laptop.html"><img id="laptoppic" src="laptop1.png" alt="laptopimg"></a>
+                <a href="laptop.html"><small id="menu_text3">Laptop</small></a>
+                <br><br>
+                <a href="about.html"><img id="contactuspic" src="contact1.png" alt="contactimg"></a>
+                <a href="about.html"><small id="menu_text4">Contact Us</small></a>
+            </div>
+        </div>
+         <!--Modal For Menu End-->
+
+         <!--Buttons-->
+         <a href="explore.html"><img onmouseover="btnoverexp(this)" onmouseout="btnoutexp(this)" id="explorepic" src="exp.png" alt="explore" ></a>
+         <img onmouseover="btnoverreg(this)" onclick="Register()" onmouseout="btnoutreg(this)" id="registerpic" src="register.png" alt="register" >
+        
+         <!--Buttons-->
+
+        <!--Modal For Signup Start-->
+         <div id="model_reg" class="model_reg_class">
+             <div class="model_reg_content">
+                    <img src="close.png" alt="closeimg" class="close_reg" onclick="cancelbtnReg()">
+                    <img src="newsletter.jpg" alt="newsletter" class="news" >
+                <div id="form">
+                 <form onsubmit="subscribe()">
+                     <label for="uname">Username</label><br>
+                     <input type="text" name="uname" id="uname" placeholder="John Smith" required/><br>
+                     <label for="mail">Email</label><br>
+                     <input type="email" name="mail" id="mail" placeholder="example@example.com" required/><br>
+                     <label for="phone">Phone</label><br>
+                     <input type="text" name="phone" id="phone" placeholder="XXXXXXXXXXX" required/><br>
+                     <input type="submit" value="Subscribe" class="subscribe"/>
+                 </form>
+                  <em><b>We will let you know as soon as any new product get lanuched !!</b></em>
+                </div>
+             </div>
+         </div>
+         <!--Modal For Signup End-->
+        
+        <script>
+            var id_menu = document.getElementById("menupic");
+            var model_menu = document.getElementById("model_menu");
+            var model_reg = document.getElementById("model_reg");
+
+            id_menu.onclick = function() {
+            model_menu.style.display = "block";
+            }
+
+            function cancelbtn() {
+                model_menu.style.display = "none";
+             }
+
+            function cancelbtnReg(){
+                model_reg.style.display = "none";
+            }
+ 
+            function btnoverexp(x){
+                x.style.width = "19%";
+                x.style.height = "9.4%";
+            }
+
+            function btnoutexp(y){
+                y.style.width = "15%";
+                y.style.height = "7.8%";  
+            }
+
+            function btnoverreg(z){
+                z.style.width = "18%"; 
+            }
+
+            function btnoutreg(a){
+                a.style.width = "15%"; 
+            }
+
+            function menuOver(x){
+                x.style.width = "4%";
+                x.style.height = "8%";
+            }
+
+            function menuOut(x){
+                x.style.width = "3%";
+                x.style.height = "7%";
+            }
+
+            function Register(){
+                model_reg.style.display = "block";
+            }
+            function subscribe(){
+                model_reg.style.display = "none"
+               alert("Thank you for signing up !!");
+               
+            }
+            window.onclick = function(event) {
+                if (event.target ==  model_menu) {
+                    model_menu.style.display = "none";
+                }
+
+                if (event.target ==  model_reg) {
+                    model_reg.style.display = "none";
+                }
+            }   
+
+        </script>
+
+    </body>
+    <footer>
+        
+    </footer>
+</html>

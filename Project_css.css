@@ -1,0 +1,347 @@
+
+#menupic{
+    float: left;
+    width: 3%;
+    height: 7%;
+    margin-top: -0.5%;
+}
+
+header{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family:'Harrington','AR ESSENCE','AR CENA', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    margin-left: 16%;  
+}
+
+#aboutpic{
+    float :  right;
+    width: 2%;
+    height: 4%;
+    margin-right : 0.5%;  
+}
+
+#abouttext{
+    float :  right;
+    margin-right : 1%;
+}
+
+#langpic{
+    float : right;
+    width: 3%;
+    height: 4%;
+    margin-right : 0.5%;
+}
+#langtext{
+    float :  right;
+    margin-right : 2%;
+}
+
+#backpic{
+    margin-top: 2%;
+    width :100%;
+    height :70%;
+}
+
+.model_menu_class {
+    display: none;  
+    position: fixed;  
+    z-index: 1;  
+    left: 0;
+    top: 0;
+    width: 20%;  
+    height: 100%;  
+    overflow: auto;  
+    background-color: rgb(0,0,0);  
+    background-color: rgba(0,0,0,0.4);  
+  }
+  
+  /* Modal Content/Box */
+  .model_menu_content {
+    background-color: #fefefe;
+    margin: 20% auto;  
+    padding: 8%;
+    border: 1% solid #888;
+    width: 90%;     
+  }
+  
+  /* The Close Button */
+  .close_menu {
+    color: rgb(0,0,0);
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    width: 7%;
+    height: 2%;
+  }
+  
+  .close_menu:hover,
+  .close_menu:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    background-image: none;
+  }
+
+  #menu_text1:hover,
+  #menu_text2:hover,
+  #menu_text3:hover,
+  #menu_text4:hover
+  {
+      text-decoration: underline; 
+  }
+
+  #homepic{
+    width: 25%;
+    height: 7%;
+  }
+
+  #phonepic{
+    width: 25%;
+    height: 7%;
+    padding: 2px;
+  }
+
+  #laptoppic{
+    width: 25%;
+    height: 7%;
+    padding: 2px;
+  }
+
+  #contactuspic{
+    width: 25%;
+    height: 7%;
+    padding: 2px; 
+  }
+
+  #menu_text1{
+   float: right;
+   margin-right: 40%;
+   margin-top: 6%;
+   text-align: left;
+   color: black;
+  }
+
+  #menu_text2{
+    float: right;
+    margin-right: 28%;
+    margin-top: 6%;
+    text-align: left;
+    color: black;
+   }
+
+   #menu_text3{
+    float: right;
+    margin-right: 44%;
+    margin-top: 5%;
+    text-align: left;
+    color: black;
+   }
+
+   #menu_text4{
+    float: right;
+    margin-right: 34%;
+    margin-top: 5%;
+    text-align: left;
+    color: black;
+   }
+
+   #registerpic{
+       float: right;
+       width : 15%;
+       margin-right: 28%;
+       margin-top: 1%;
+   }
+
+   #explorepic{
+    margin-left: 28%;
+    margin-top: 1%;
+    width: 15%;
+    height: 7.8%;
+   }
+
+   .model_reg_class {
+    display: none;  
+    position: fixed;  
+    z-index: 1;  
+    left: 0;
+    top: 0;
+    width: 100%;  
+    height: 100%;  
+    overflow: none;  
+    background-color: rgb(0,0,0);  
+    background-color: rgba(0,0,0,0.4);  
+  }
+  
+  /* Modal Content/Box */
+  .model_reg_content {
+    background-color: #fefefe;
+    margin-top : 3%;
+    margin-left: 18%;
+    padding: 8%;
+    border: 1% solid #888;
+    width: 50%; 
+    margin-bottom: 10%;
+  }
+
+  .close_reg {
+    color: rgb(0,0,0);
+    float: right;
+    font-size: 8px;
+    font-weight: bold;
+    margin-top: -13%;
+    margin-right: -13%;
+    width: 5%;
+    height: 4%;
+  }
+
+  .close_reg:hover,
+  .close_reg:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    background-image: none;
+  }
+
+  #form{
+   margin-left: 38%;
+  }
+  label{
+    font-size: 1.5em;
+  }
+  input{
+    border: 1px solid black;
+    padding: 7px;
+    margin: 4px;
+    width: 100%;
+  }
+
+  .news{
+    float: left;
+    margin-left: -10%;
+    width:40%;
+    height: 30%;
+    margin-top:6%;
+  }
+  .subscribe{
+    width : 30%;
+  }
+
+  #phone{
+    float: left;
+  }
+ 
+  #box1{
+    border: 2px solid black;
+    margin-top: 3%;
+    padding : 2px;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.700);
+  }
+
+  iframe{
+    float : right;
+    margin-top: -16%;
+    margin-right: 2%;
+  }
+  #pixelFrame{
+    float : right;
+    margin-top: -19%;
+    margin-right: 2%;
+  }
+  .about{
+    width: 9%;
+    height: 19%;
+    padding: 3%;;
+    margin-left: 1%;
+    margin-top: 5%;
+    border: 1px solid black;
+
+    box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.836);
+    transition: 0.3s;
+  }
+
+  .about1{
+    width: 9%;
+    height: 19%;
+    padding: 3%;;
+    margin-left: 1%;
+    margin-top: 5%;
+    border: 1px solid black;
+
+    box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.836);
+    transition: 0.3s;
+  }
+
+  .about2{
+    margin-left: 9%;
+    margin-top: 1%;
+
+    width: 11%;
+    height: 21%;
+    padding: 3%;
+    border: 1px solid black;
+    
+    box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.836);
+    transition: 0.3s;
+    
+  }
+
+  #feedback{
+    float: right;
+    border: 2px solid black;
+    margin-top: -15%;
+    margin-right: 6%;
+    padding: 1%;
+    font-size: 1.3em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.836);
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .card1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 4px;
+    margin-left: 16%;
+    margin-top: 8%;
+  }
+
+  .card1:hover{
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.836);
+  }
+  
+  .card2{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    float: right;
+    padding: 4px;
+    margin-right: 18%;
+    margin-top: -23.4%; 
+  }
+ 
+  .card2:hover{
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.836);
+  }
+  #card_text1{
+     margin-left: 26%;
+     font-family:'Harrington','AR ESSENCE','AR CENA', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+     font-size: 1.2em;
+     font-weight: bold;
+     color: black;
+     text-decoration: none;
+  }
+  #card_text2{
+     float: right;
+     margin-right: 31%;
+     margin-top: -6%;
+     font-family:'Harrington','AR ESSENCE','AR CENA', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+     font-size: 1.2em;
+     font-weight: bold;
+  }
+
+  #text_phn{
+    color: black;
+    text-decoration: underline;
+  }

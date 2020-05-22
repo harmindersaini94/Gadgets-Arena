@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>About Us</title>
+       <link href="Project_css.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+            <img id="menupic" onmouseover="menuOver(this)" onmouseout="menuOut(this)" src="menu.png" alt="menuimg" onclick="loadMenu()">
+            <a href="about.html"><small id="abouttext">About Us</small></a>
+            <a href="about.html"><img id="aboutpic" src="about.png" alt="aboutus" ></a>
+            <small id="langtext">English</small>
+            <img id="langpic" src="lang1.png" alt="lang" >
+  
+       <header>
+          Premium Gadgets Arena
+       </header>
+
+       <img src="aboutPage.png" alt="About" class="about" >
+       <img src="aboutPage2.jfif" alt="About" class="about1" ><br>
+       <img src="aboutPage3.jpeg" alt="About" class="about2" >
+       <!--<div class="about2"><img src="aboutPage3.jpeg" alt="About" id="about_img"  ></div>-->
+       <div id="feedback">
+           <em><b>We do appreciate you Feedback !</b></em><br>
+           We will be very happy to hear from you on the following topics :
+             <ol style="list-style-type: disc;">
+                 <li>Reading any specification of the gadget featured on the site</li>
+                 <li>Rearding any comparison between gadget featured on our site</li>
+                 <li>Regarding any incorrect specs that we listed on our site</li>
+                 <li>Regarding any additional info that should be posted on our site</li>
+             </ol>
+             You can always <b><em>contact</em></b> us at <b><i><u><a href="mailto:support@premiumgadgetarena.com">support@premiumgadgetarena.com</a></u></i></b>
+             <br><br><br>
+             <b><em>We are expanding too...</em></b><br>
+           For any information regarding any posting you can always <br>contact us as mentioned below :
+           <b><i><u><a href="carrer@premiumgadgetarena.com">carrer@premiumgadgetarena.com</a></u></i></b>
+       </div>
+        
+        <!--Model For Menu Start-->
+        <div id="model_menu" class="model_menu_class">
+            <div class="model_menu_content">
+                    <img src="close.png" alt="homeimg" class="close_menu" onclick="cancelbtn()">
+                    <a href="index.html"><img id="homepic" src="home1.png" alt="homeimg"></a>
+                    <a href="index.html"><small id="menu_text1">Home</small></a>
+                    <br><br>
+                    <a href="phone.html"><img id="phonepic" src="phone1.png" alt="phoneimg"></a>
+                    <a href="phone.html"><small id="menu_text2">Smartphones</small></a>
+                    <br><br>
+                    <a href="laptop.html"><img id="laptoppic" src="laptop1.png" alt="laptopimg"></a>
+                    <a href="laptop.html"><small id="menu_text3">Laptop</small></a>
+                    <br><br>
+                    <a href="about.html"><img id="contactuspic" src="contact1.png" alt="contactimg"></a>
+                    <a href="about.html"><small id="menu_text4">Contact Us</small></a>
+            </div>
+        </div>
+         <!--Model For Menu End-->
+         
+        <script>
+            var id_menu = document.getElementById("menupic");
+            var model_menu = document.getElementById("model_menu");
+
+            id_menu.onclick = function() {
+            model_menu.style.display = "block";
+            }
+
+            function cancelbtn() {
+                model_menu.style.display = "none";
+             }
+
+            function menuOver(x){
+                x.style.width = "4%";
+                x.style.height = "8%";
+            }
+
+            function menuOut(x){
+                x.style.width = "3%";
+                x.style.height = "7%";
+            }
+
+            window.onclick = function(event) {
+                if (event.target ==  model_menu) {
+                    model_menu.style.display = "none";
+                }
+            }   
+
+        </script>
+
+    </body>
+    <footer>
+        
+    </footer>
+</html>
